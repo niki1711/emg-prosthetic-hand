@@ -7,7 +7,8 @@ The system captures muscle signals using EMG sensors and processes the data to c
 ## Features
 - Processes EMG signal data to detect movement patterns  
 - Implements control logic for real-time finger movement  
-- Provides responsive and adaptive system behavior  
+- Multi-finger actuation using 5 servo motors (thumb, index, middle, ring, little)  
+- Provides responsive and adaptive system behavior 
 
 ## System Architecture
 - EMG sensors capture muscle signals  
@@ -18,7 +19,7 @@ The system captures muscle signals using EMG sensors and processes the data to c
 ## Working Process
 1. EMG sensors detect muscle activity  
 2. Signals are captured and processed  
-3. Pattern recognition logic identifies movement intent  
+3. Threshold-based logic identifies muscle activation
 4. Signals are mapped to servo motor actions  
 5. Prosthetic hand performs real-time movement  
 
@@ -38,16 +39,23 @@ The system captures muscle signals using EMG sensors and processes the data to c
 ![EMG Hand Setup](handimg2.png)  
 
 ## Demo Videos
-- [Demo Video 1](hand video.mp4)  
-- [Demo Video 2](now_video -recent.mp4)  
+- [Demo Video 1](hand%20video.mp4)  
+- [Demo Video 2](now_video%20-recent.mp4)   
 
 ## Description
-This project focuses on building an assistive prosthetic system that reacts to EMG signals. The signals are processed and mapped to physical movements, enabling real-time control of a prosthetic hand.
+This project demonstrates a real-time assistive system that converts EMG signals into physical movement. Muscle signals are processed and mapped to servo-driven finger actuation, enabling intuitive control of a prosthetic hand.
 
 ## Applications
 - Assistive technology for amputees  
 - Human-computer interaction  
-- Real-time embedded systems  
+- Real-time embedded systems
+
+## Code
+Basic implementation for EMG signal reading and control is included in the `code/` folder.
+This code demonstrates:
+- Reading EMG sensor values  
+- Applying threshold-based logic  
+- Controlling multiple servo motors for finger movement   
 
 ## Learnings
 - Signal data processing and pattern recognition  
